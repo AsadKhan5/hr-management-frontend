@@ -1,4 +1,6 @@
-const API_BASE_URL = 'https://hr-management-eight-ebon.vercel.app';
+const API_BASE_URL = 'https://hr-management-green.vercel.app';
+// const API_BASE_URL = 'http://localhost:5000';
+
 
 // Employee API calls
 export const getEmployees = async (search = '', page = 1, count = 20) => {

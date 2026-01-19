@@ -108,8 +108,8 @@ const Attendance = () => {
                 >
                   <option value="">Select Employee</option>
                   {employees.map((emp) => (
-                    <option key={emp.id} value={emp.empid}>
-                      {emp.empid} - {emp.full_name}
+                    <option key={emp.id} value={emp.empId}>
+                      {emp.empId} - {emp.full_name}
                     </option>
                   ))}
                 </select>
@@ -165,8 +165,8 @@ const Attendance = () => {
               >
                 <option value="">Select Employee</option>
                 {employees.map((emp) => (
-                  <option key={emp.id} value={emp.empid}>
-                    {emp.empid} - {emp.full_name}
+                  <option key={emp.id} value={emp.empId}>
+                    {emp.empId} - {emp.full_name}
                   </option>
                 ))}
               </select>
@@ -189,7 +189,7 @@ const Attendance = () => {
               <div className="stat">
                 <div className="stat-title">Employee</div>
                 <div className="stat-value text-sm">{stats.full_name}</div>
-                <div className="stat-desc">{stats.empid}</div>
+                <div className="stat-desc">{stats.empId}</div>
               </div>
               <div className="stat">
                 <div className="stat-title">Total Present</div>
@@ -225,7 +225,7 @@ const Attendance = () => {
                     attendance.map((record) => (
                       <tr key={record.id}>
                         <td>{new Date(record.date).toLocaleDateString()}</td>
-                        <td>{record.empid}</td>
+                        <td>{record.empId}</td>
                         <td>{record.full_name}</td>
                         <td>{record.department}</td>
                         <td>
